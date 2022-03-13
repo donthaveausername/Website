@@ -20,7 +20,7 @@ class App extends Component {
 					<h1 className={styles.title}>The HCI Discord Science Bot</h1>
 
 					<p className={styles.description}>
-						<a className={styles.link} href='https://link.to/invite/bot'>Invite</a> the bot now!
+						Join this <a className={styles.link} href='https://discord.gg/RtrGUaTVcS'>server</a> to use the bot!
 					</p>
 
 					<div className={styles.grid}>
@@ -28,15 +28,10 @@ class App extends Component {
 							<h2>Commands</h2>
 							<p>View the all the bot commands here!</p>
 						</a>
-						<a href='#desc' className={styles.card}>
+						<a href='./description' className={styles.card}>
 							<h2>Read More</h2>
 							<p>Read the description of the bot and etc.</p>
 						</a>
-					</div>
-					<hr className={styles.hr} />
-					<div id='desc'>
-						<h1 className={styles.title}>Description</h1>
-						<p>Descriptions are WIP</p>
 					</div>
 				</main>
 

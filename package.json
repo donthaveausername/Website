@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export",
+    "dev": "NODE_ENV=development next dev",
+    "build": "NODE_ENV=production next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@mdx-js/loader": "^2.0.0",
+    "@next/mdx": "^12.1.0",
     "eslint-config-berry": "^0.15.5",
     "next": "12.1.0",
     "react": "17.0.2",
