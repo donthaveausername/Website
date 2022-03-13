@@ -40,7 +40,7 @@
 }
 
 .link {
-  color: #0070f3;
+  color: #0070f3 !important;
   text-decoration: none;
 }
 
