@@ -2,6 +2,13 @@
   padding: 0 2rem;
 }
 
+.hr {
+  height: 50vh !important;
+  border-width: 0;
+  color: gray;
+  background-color: gray
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
@@ -28,7 +35,7 @@
   flex-grow: 1;
 }
 
-.title a {
+.link {
   color: #0070f3;
   text-decoration: none;
 }

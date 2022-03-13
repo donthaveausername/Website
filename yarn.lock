@@ -463,6 +463,11 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
+eslint-config-berry@^0.15.5:
+  version "0.15.5"
+  resolved "https://registry.yarnpkg.com/eslint-config-berry/-/eslint-config-berry-0.15.5.tgz#35e595d65d519b00b9dc553c231a64cd9e264c3c"
+  integrity sha512-s3ES8kzlw17KIqszSXEqviAExVU49X/Gu2bFvIaPA1CbinL+g+3pqWFKPFTuwUiPyBZH6HdLoEfNaOsUqSh7xQ==
+
 eslint-config-next@12.1.0:
   version "12.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-12.1.0.tgz#8ace680dc5207e6ab6c915f3989adec122f582e7"
