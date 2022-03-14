@@ -1,13 +1,22 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import { Menu, Header, Image, Segment } from 'semantic-ui-react';
+
 
 export default function Document() {
 	return (
-		<Html>
+		<Html lang='en'>
 			<Head>
-				<base _target="_blank" />
 			</Head>
-			<body>
-				<Main />
+			<body className='body'>
+				<Segment inverted>
+					<Menu inverted pointing secondary>
+						<Menu.Item>
+							<Image src='/data-science.png' avatar />
+							<span>HCI Science Discord Bot</span>
+						</Menu.Item>
+					</Menu>
+				</Segment>
+				<Main className='main-h' />
 				<NextScript />
 			</body>
 		</Html>
