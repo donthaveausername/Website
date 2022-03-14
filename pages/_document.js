@@ -11,7 +11,7 @@ export default function Document() {
 				<Segment inverted>
 					<Menu inverted pointing secondary>
 						<Menu.Item>
-							<Image src='/data-science.png' avatar />
+							<Image src='/Website/data-science.png' avatar />
 							<span>HCI Science Discord Bot</span>
 						</Menu.Item>
 					</Menu>
