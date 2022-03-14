@@ -40,6 +40,10 @@ class App extends Component {
 							<h2>Teacher{String.fromCharCode(39)}s Portal (Link to be added)</h2>
 							<p>Login to the Teacher{String.fromCharCode(39)}s Portal (Teachers only{/* , if you are a student do not even think of it */})</p>
 						</a>
+						<a href='./credits' className={styles.card}>
+							<h2>Credits</h2>
+							<p>The names and contributions of our developer team!</p>
+						</a>
 					</div>
 				</main>
 
