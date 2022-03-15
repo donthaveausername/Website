@@ -29,12 +29,24 @@ class App extends Component {
 
 		axios.post(this.webhookUrl, {
 			username: name,
-			content: this.state.feedback,
+			embeds: [
+				{
+					title: 'Feedback',
+					description: `
+					My Class: ${className}
+					Feedback: ${feedback}
+					`,
+					footer: new Date().toLocaleDateString(),
+					timestamp: new Date().toISOString(),
+					author: `${name} (${className})`,
+				},
+			],
 		}).catch(err => {
 			this.setState({ output: err.message });
+			return;
 		});
 
-		this.setState({ disabled: true });
+		this.setState({ output: 'Thank you for your feedback!', disabled: true });
 	}
 
 	render() {
@@ -53,7 +65,7 @@ class App extends Component {
 						resize: 'none',
 					}} onChange={(e) => this.setState({ feedback: e.target.value })} />
 				</Form>
-				<Button positive fluid state={this.state.disabled} onClick={() => this.sendFeedback()}>Send your feedback</Button>
+				<Button positive fluid disabled={this.state.disabled} onClick={() => this.sendFeedback()}>Send your feedback</Button>
 				<p>{this.state.output}</p>
 			</Container>
 		);
