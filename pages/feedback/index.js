@@ -28,17 +28,19 @@ class App extends Component {
 		}
 
 		axios.post(this.webhookUrl, {
-			username: name,
+			username: 'Feedback Bot',
 			embeds: [
 				{
-					title: 'Feedback',
 					description: `
-					My Class: ${className}
 					Feedback: ${feedback}
 					`,
-					footer: new Date().toLocaleDateString(),
-					timestamp: new Date().toISOString(),
-					author: `${name} (${className})`,
+					footer: {
+						text: `Sent at ${new Date().toLocaleDateString} ${new Date().toLocaleTimeString()}`,
+					},
+					// timestamp: new Date().toISOString(),
+					author: {
+						name: `${name} (${className})`,
+					},
 				},
 			],
 		}).catch(err => {
