@@ -37,7 +37,7 @@ class App extends Component {
 							<h2>Contributing Guide</h2>
 							<p>Contribute to this site, the bot, database server or the Teacher{String.fromCharCode(39)}s Portal!</p>
 						</a>
-						<a href='https://link.to/teacher/portal' className={styles.card}>
+						<a href='https://hci-science-project.github.io/Teacher-Portal/' className={styles.card}>
 							<h2>Teacher{String.fromCharCode(39)}s Portal (Link to be added)</h2>
 							<p>Login to the Teacher{String.fromCharCode(39)}s Portal (Teachers only{/* , if you are a student do not even think of it */})</p>
 						</a>
