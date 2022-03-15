@@ -67,7 +67,7 @@ class App extends Component {
 						resize: 'none',
 					}} onChange={(e) => this.setState({ feedback: e.target.value })} />
 				</Form>
-				<Button positive fluid disabled={this.state.disabled} onClick={() => this.sendFeedback()}>Send your feedback</Button>
+				<Button circular positive fluid disabled={this.state.disabled} onClick={() => this.sendFeedback()}>Send your feedback</Button>
 				<p>{this.state.output}</p>
 			</Container>
 		);
