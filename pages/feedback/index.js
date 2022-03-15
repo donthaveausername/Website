@@ -56,12 +56,10 @@ class App extends Component {
 			<Container>
 				<Head>
 					<title>Feedback</title>
-					<script src='https://www.google.com/recaptcha/api.js'></script>
 				</Head>
 				<Header as='h1' textAlign='center'>Feedback</Header>
 				<p>Give feedback on the bot and tell us what you think about it or what features you want!</p>
 				<Form>
-					<div class="g-recaptcha" data-sitekey="6LcQUOAeAAAAAFbrfssl6K-FhMXrowvYteuW3Pwp"></div>
 					<Input type='text' placeholder='Name' onChange={(e) => this.setState({ name: e.target.value })} fluid />
 					<Input type='text' placeholder='Class (so that we can track you down)' onChange={(e) => this.setState({ class: e.target.value })} fluid />
 					<TextArea placeholder='Tell us more!' style={{
