@@ -45,6 +45,10 @@ class App extends Component {
 							<h2>Credits</h2>
 							<p>The names and contributions of our developer team!</p>
 						</a>
+						<a href='./feedback' className={styles.card}>
+							<h2>Feedback</h2>
+							<p>For any and all feedback you might have</p>
+						</a>
 					</div>
 				</main>
 
