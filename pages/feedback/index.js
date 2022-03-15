@@ -35,7 +35,7 @@ class App extends Component {
 					Feedback: ${feedback}
 					`,
 					footer: {
-						text: `Sent at ${new Date().toLocaleDateString} ${new Date().toLocaleTimeString()}`,
+						text: `Sent at ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()}`,
 					},
 					// timestamp: new Date().toISOString(),
 					author: {
